@@ -18,7 +18,7 @@
 
   /* XXX: using px for very good precision control */
   --decorator-outer-offset-top: 10px;
-  --decorator-outer-offset-left: -5.5px;
+  --decorator-outer-offset-left: -4.5px;
   --decorator-border-width: 1px;
   --decorator-outer-dim: 9px;
   --decorator-border: 1px solid #ccc;
@@ -75,14 +75,14 @@ li{
 
 #title{
   position: relative;
-  left: 0.55in;
+  padding-left: 0.55in;
   margin-bottom: 0.3in;
   line-height: 1.2;
 }
 
 #title h1{
   font-weight: 300;
-  font-size: 18pt;
+  font-size: 24pt;
   line-height: 1.5;
 }
 
@@ -91,8 +91,15 @@ li{
   font-weight: 600;
 }
 
+.title--lower{
+  font-size: 24pt;
+  text-transform: lowercase;
+}
+
 .subtitle{
   font-size: 8pt;
+  text-transform: none;
+  
 }
 
 /*** categorial blocks ***/
@@ -108,7 +115,7 @@ li{
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
   font-weight: 400;
   font-size: 11pt;
-  color: #555;
+  color: cornflowerblue;
 }
 
 #main h2 > i{
@@ -328,6 +335,10 @@ li{
   margin-top: 0.5in; 
 }
 
+.side-block h1{
+  color: cornflowerblue;
+}
+
 #contact ul{
   margin-top: 0.05in;
   padding-left: 0;
@@ -342,7 +353,7 @@ li{
 }
 
 #skills{
-  line-height: 1.5;
+  line-height: 2.2;
 }
 
 #skills ul{
@@ -366,4 +377,8 @@ li{
   font-family: "Source Code Pro";
   font-weight: 400;
   font-style: normal;
+}
+
+.blue{
+  color: cornflowerblue !important;
 }
