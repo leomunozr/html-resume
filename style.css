@@ -94,6 +94,7 @@ li{
 .title--lower{
   font-size: 24pt;
   text-transform: lowercase;
+  font-family: 'Quicksand';
 }
 
 .subtitle{
@@ -386,4 +387,10 @@ li{
 
 .blue{
   color: cornflowerblue !important;
+}
+
+@media print {
+  #sidebar {
+    background-color: #f2f2f2;
+  }
 }
