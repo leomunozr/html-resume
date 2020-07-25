@@ -33,7 +33,7 @@ body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.3;
   color: #444;
@@ -53,7 +53,7 @@ li{
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  font-size: 9pt;
 }
 
 #sidebar{
@@ -63,7 +63,7 @@ li{
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  font-size: 9pt;
 }
 
 /* main */
@@ -76,7 +76,7 @@ li{
 #title{
   position: relative;
   padding-left: 0.55in;
-  margin-bottom: 0.3in;
+  margin-bottom: 0.2in;
   line-height: 1.2;
 }
 
@@ -98,9 +98,9 @@ li{
 }
 
 .subtitle{
-  font-size: 8pt;
+  font-size: 10pt;
   text-transform: none;
-  
+
 }
 
 /*** categorial blocks ***/
@@ -172,7 +172,7 @@ li{
   flex: 0 0 var(--date-block-width);
   padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
   padding-right: var(--decorator-horizontal-margin);
-  font-size: 7pt;
+  font-size: 8pt;
   text-align: right;
   line-height: 1;
 }
@@ -196,6 +196,9 @@ li{
   width: 2pt;
   min-height: 100%;
   border-left: var(--decorator-border);
+}
+.decorator.last{
+  height: 10px;
 }
 
 /*
@@ -249,10 +252,14 @@ li{
 
 .details h3{
   font-size: 9pt;
+  display: inline-block;
+}
+.details h3:after {
+  content: ' - ';
 }
 
 .main-block:not(.concise) .details div{
-  margin: 0.18in 0 0.1in 0; 
+  margin: 0 0 0.1in 0;
 }
 
 .main-block:not(.concise) .blocks:last-child .details div{
@@ -266,8 +273,7 @@ li{
 }
 
 .details .place{
-  float: left;
-  font-size: 7.5pt;
+  font-size: 8pt;
 }
 
 .details .location{
@@ -333,7 +339,10 @@ li{
 }
 
 .side-block{
-  margin-top: 0.5in; 
+  margin-top: 0.5in;
+}
+.side-block:first-child {
+  margin-top: 0;
 }
 
 .side-block h1{
@@ -343,7 +352,6 @@ li{
 #contact ul{
   margin-top: 0.05in;
   padding-left: 0;
-  font-family: "Source Code Pro";
   font-weight: 400;
   line-height: 1.75;
 }
@@ -356,6 +364,25 @@ li{
 #contact li a{
   text-decoration: none;
   color: inherit;
+}
+
+#education ul{
+  margin-top: 0.05in;
+  padding-left: 0;
+}
+
+#education li > i{
+  width: 9pt; /* for text alignment */
+  text-align: right;
+}
+
+#education li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#education h4 {
+  margin: 10px 0 6px;
 }
 
 #skills{
