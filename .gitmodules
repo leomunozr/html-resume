@@ -4,3 +4,6 @@
 [submodule "normalize.css"]
 	path = dep/normalize.css
 	url = https://github.com/necolas/normalize.css/
+[submodule "hugo/themes/hugo-devresume-theme"]
+	path = hugo/themes/hugo-devresume-theme
+	url = https://github.com/cowboysmall-tools/hugo-devresume-theme.git

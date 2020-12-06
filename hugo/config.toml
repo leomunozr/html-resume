@@ -1,0 +1,267 @@
+# Page settings
+
+baseURL = "http://example.org/"
+languageCode = "en"
+title = "Leo Munoz - Resume"
+theme = "hugo-devresume-theme"
+
+[params]
+    author = "CowboySmall"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+    primaryColor = "cornflowerblue"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        firstName = "Leonardo"
+        lastName= "Muñoz"
+        tagline = "Javascript Developer"
+        # avatar = "avatar.png"
+
+    [params.contact]
+        enable = true
+        # location = "Mexico City"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone"
+        url = "tel:+525536555990"
+        text = "(+52) 55-3655-5990"
+        [[params.contact.list]]
+        icon = "fas fa-envelope"
+        url = "mailto:leo@leomunoz.dev"
+        text = "leo@leomunoz.dev"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://leomunoz.dev"
+        text = "leomunoz.dev"
+        [[params.contact.list]]
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/leomunozr"
+        text = "leomunozr"
+        [[params.contact.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/leomunozr"
+        text = "@leomunozr"
+
+    [params.summary]
+        enable = true
+        text = "I’m a JS lover from Mexico City with 6+ years of experience specializing in front-end technologies. I build web apps with a focus on smooth UX that users can enjoy. I put special care in writing clean and elegant code."
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+          details = "JS (ES2020)"
+          [[params.skills.list.items]]
+          details = "React / Redux"
+          [[params.skills.list.items]]
+          details = "NextJS"
+          [[params.skills.list.items]]
+          details = "Node"
+          [[params.skills.list.items]]
+          details = "Express"
+          [[params.skills.list.items]]
+          details = "Sails"
+          [[params.skills.list.items]]
+          details = "SASS"
+          [[params.skills.list.items]]
+          details = "MongoDB"
+          [[params.skills.list.items]]
+          details = "PL/SQL"
+          [[params.skills.list.items]]
+          details = "GraphQL"
+          [[params.skills.list.items]]
+          details = "REST"
+          [[params.skills.list.items]]
+          details = "Jest, Mocha, Chai, Enzyme"
+          [[params.skills.list.items]]
+          details = "npm, git, Webpack"
+          [[params.skills.list.items]]
+          details = "Scrum, Kanban"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Diplomate Course Embedded Linux"
+        university = "University of Mexico (UNAM)"
+        # dates = "2010 - 2011"
+        [[params.education.list]]
+        degree = "B.S. in Electrical & Electronics Engineering"
+        university = "University of Mexico (UNAM)"
+        # dates = "2007 - 2010"
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+    [params.languages]
+        enable = false
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Professional"
+
+    [params.interests]
+        enable = false
+
+        [[params.interests.list]]
+        name = "Climbing"
+        [[params.interests.list]]
+        name = "Snowboarding"
+        [[params.interests.list]]
+        name = "Photography"
+        [[params.interests.list]]
+        name = "Travelling"
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.company]]
+        company = "Grio Mexico"
+          [[params.experience.company.project]]
+          title = "React Developer"
+          dates = "Jul 2019 - Today"
+          # details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
+          [[params.experience.company.project.detail]]
+          details = "Built a desktop and mobile responsive web app."
+          [[params.experience.company.project.detail]]
+          details = "Created a library of reusable components using React / Redux and Material UI."
+          [[params.experience.company.project.detail]]
+          details = "Reduced app's loading time by virtualizing render of large data sets."
+          [[params.experience.company.project.detail]]
+          details = "Boosted app's performance by inspecting code's impact on React's lifecycle."
+          [[params.experience.company.project.detail]]
+          details = "Set and evaluate periodic goals alongside with stakeholders."
+
+        [[params.experience.company]]
+        company = "Globant Mexico"
+          [[params.experience.company.project]]
+          title = "Angular Developer"
+          dates = "Oct 2018 - Jul 2019"
+          client = "Sourceability"
+            [[params.experience.company.project.detail]]
+            details = "Improved user experience by redesigning widgets to be interactive and facilitate the user to manipulate data and rearrange layouts."
+            [[params.experience.company.project.detail]]
+            details = "Reduced app's initial loading time by better bootstrapping Angular and better managing DOM manipulation."
+            [[params.experience.company.project.detail]]
+            details = "Followed Scrum methodology."
+
+          [[params.experience.company.project]]
+          company = "Globant Mexico"
+          title = "Javascript / Node Developer"
+          dates = "Sept 2017 - Oct 2018"
+          client = "Zaplabs"
+            [[params.experience.company.project.detail]]
+            details = "Built brand’s custom CMS to organize content creation."
+            [[params.experience.company.project.detail]]
+            details = "Created blog’s editing tools using Javascript and ES6."
+            [[params.experience.company.project.detail]]
+            details = "Implemented a reverse-proxy using Node/Express to fetch assets from specific brand server."
+            [[params.experience.company.project.detail]]
+            details = "Organized under Kanban methodology."
+
+          [[params.experience.company.project]]
+          company = "Globant Mexico"
+          title = "React / Node developer"
+          dates = "Sept 2016 - Aug 2017"
+          client = "DWA Nova"
+            [[params.experience.company.project.detail]]
+            details = "Launched a desktop app that syncs and versions existing local files to the cloud."
+            [[params.experience.company.project.detail]]
+            details = "Developed app’s interface using React/Redux components wrapped in Electron lib."
+            [[params.experience.company.project.detail]]
+            details = "Built a Node server to handle communication between the app and an AWS bucket instance."
+            [[params.experience.company.project.detail]]
+            details = "Implemented a REST API with Express to interchange files between AWS and local filesystem."
+            [[params.experience.company.items]]
+            details = "Unit tests done with Mocha, Chai, Sinon and Enzyme."
+
+          [[params.experience.company.project]]
+          company = "Globant Mexico"
+          title = "AngularJS Developer"
+          dates = "Nov 2015 - Sept 2016"
+          client = "United Airlines"
+            [[params.experience.company.project.detail]]
+            details = "Developed a control panel to administrate personnel and daily tasks using AngularJS, ES6 and SASS."
+            [[params.experience.company.project.detail]]
+            details = "Created widgets with a focus on reusability to share components among projects."
+            [[params.experience.company.project.detail]]
+            details = "Automated tasks to build environment and scaffold components using Webpack and Gulp scripts."
+            [[params.experience.company.project.detail]]
+            details = "Followed Scrum methodology."
+
+        [[params.experience.company]]
+        company = "Indigo Smart Software Development"
+          [[params.experience.company.project]]
+          title = ".NET Developer"
+          dates = "Aug 2015 - Nov 2015"
+            [[params.experience.company.project.detail]]
+            details = "Designed and created an API for processing payments in an e-commerce application using .NET."
+            [[params.experience.company.project.detail]]
+            details = "Maintenance of existing RESTful web services created with .Net MVC4."
+
+    [params.projects]
+        enable = false
+
+        [[params.projects.list]]
+        title = "Project Lorem Ipsum"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+        [[params.projects.list]]
+        title = "Project Sed Fringilla"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+        [[params.projects.list]]
+        title = "Project Praesent"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+    [params.social]
+        enable = false
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "//twitter.com/username"
+        title = "@username"
+
+    [params.footer]
+        copyright = "Leo Muñoz"
